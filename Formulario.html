@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Atividade HTML </title>
+    </head>
+<body>
+    <h2 align="center"> Preencha o Formulário </h2>
+ <hr>
+ <!--Campos de textos-->
+
+ <form name="cadastro" action="malito:afelipeftavares@gmail.com" enctype="text/plain" method="POST">
+
+ <label>Nome Completo</label><br/>
+ <input required type="text" name="nome" id="nome" size="50" placeholder="Informe nome completo..."><br/>
+ <label>E-mail</label><br/>
+ <input required type="email" name="email" id="email" size="50" placeholder="Informe e-mail válido..."><br/>
+ <label>Senha</label><br/>
+ <input required maxlength="10" pattern=".{6,10}" type="password" name="senha" id="senha" size="25"><br/>
+
+ <!--caixa de seleção-->
+
+ <label>Curso</label><br/>
+ <select required id="curso" name="curso">
+    <option selected disabled>Selecione um Curso</option>
+    <option value="Analise">Análise e Dev. de Sistemas</option>
+    <option value="Direito">Direito</option>
+    <option value="Servico_social">Serviço Social</option>
+    <option value="Fisioterapia">Físioterapia</option>
+    <option value="Odontologia">Odontologia</option>
+
+</select><br/>
+
+<!--Botões de Rádio-->
+
+<label>Gênero</label><br/>
+<input required type="radio" id="m" name="genero" value="Masculino">
+<label>Masculino</label><br/>
+<input required type="radio" id="f" name="genero" value="Feminino">
+<label>Feminino</label><br/>
+<input required type="radio" id="o" name="genero" value="Outro">
+<label>Outro</label>
+
+<!--Botões checkbox-->
+
+<label>Hobbys</label><br/>
+<input type="checkbox" name="hobby1" value="Filmes">
+<label>Assistir Filmes</label><br/>
+<input type="checkbox" name="hobby2" value="Livros">
+<label>Ler Livros</label><br/>
+<input type="checkbox" name="hobby3" value="Esporte" checked>
+<label>Praticar Esportes</label><br/>
+<input type="checkbox" name="hobby4" value="games">
+<label>Jogar Games</label><br/>
+
+<!--text area-->
+<label>Deixe sua mensagem</label><br/>
+<textarea name="Mensagem" rows="10" cols="40"></textarea>
+
+<!--Botões-->
+<br/><br/>
+<input type="submit" value="Enviar os dados">
+<input type="reset" value="Limpar os dados">
+</form>
+
+
+</body>
+</html>
