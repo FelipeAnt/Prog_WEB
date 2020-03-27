@@ -1,0 +1,102 @@
+<html>
+
+    <head>    
+        <title>Contatos</title>
+        <meta charset="UTF-8"> 
+        <style type="text/css">
+         li.hora{
+          list-style-image: url('img/Relogio-icon.png');
+         }
+         li.tel{
+          list-style-image: url('img/whatsapp-icon.png');   
+         }
+         li.mail{
+          list-style-image: url('img/email-2-icon.png');   
+         }
+         .formulario{
+            width: 400px; padding: 30px; border: 1px solid lightgray; margin: 20px; background-color: whitesmoke;
+         }
+         .formulario p{
+             width: 100%; font-size: 1.5em;
+         }         
+         .infos{
+            width: 100%; margin: 15px 0;
+         }
+         input[type=text], input[type=email], input[type=tel], textarea{
+            width: 100%;
+            padding-left: 10px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 8px;
+            border: 1px solid lightgray;
+         } 
+         textarea{
+            padding: 20px; height: 90px; resize: none; line-height: 2px;
+         }
+         input[type=submit], input[type=reset] {
+            display: block;
+            background-color: lightgray;
+            height: 35px;
+            border: none;
+            outline: 0;
+            cursor: pointer;
+            width: 100px;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 15px;
+         }
+        </style>
+     </head>
+
+<body>
+        <h2 align="center" style="background-color: blue; color: white; padding: 20px;">ENTRE EM CONTATO CONOSCO</h2>
+    
+    <h2>Outros canais de atendimento:</h2>
+
+    <!--lista-->    
+    <ul>
+        <li class="hora">00 - 20:00</li>
+        <li class="tel">(88)99999-9999</li>
+        <li class="mail">contato@sac.com</li>
+    </ul>
+<!--formulario-->
+<form class="formulario" action="malito: afelipeftavares@gmail.com" enctype="text/plain" method="POST">
+    <p>Envie uma mensagem preenchendo o fórmulario abaixo</p>
+
+<div class="infos">
+    <label>Nome:</label></br>
+    <input required type="text" name="nome" id="nome"  placeholder="Dígite seu nome completo"></br>
+</div>
+
+<div class="infos">
+    <label>E-mail:</label></br>
+    <input required type="email" name="E-mail" id="email"  placeholder="Dígite seu E-mail válido"></br>
+</div>
+
+<div class="infos">
+    <label>Endereço:</label></br>
+    <input required type="text" name="endereco" id="endereco"  placeholder="Dígite seu endereço"></br>
+</div>
+
+<div class="infos">
+    <label>Fone</label></br>
+    <input required type="tel" name="fone" id="fone"  placeholder="Dígite seu telefone"></br>
+</div>
+
+<!--texto-->
+<div class="infos">
+    <label>Deixe sua mensagem</label><br/>
+    <textarea name="Mensagem" id="mensagem" placeholder="Sua mensagem"></textarea>
+</div>
+
+<!--botões-->
+
+    <input type="submit" value="Enviar"></br></br>
+    <input type="reset" value="Limpar Campos">
+
+
+</form>
+
+</body>
+
+</html>
